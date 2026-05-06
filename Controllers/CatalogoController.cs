@@ -33,7 +33,52 @@ namespace Catalogo.Controllers
                 Ano = 2017,
                 Consola = "PlayStation 4",
                 Descripcion = "Videojuego que combina acción y narrativa filosófica..."
-            }
+            },
+               new Item
+            {
+                Id = 4,
+                Titulo = "Sonic",
+                Genero = "Carreras",
+                Ano = 1991,
+                Consola = "Sega Genesis",
+                Descripcion = "Videojuego de carreras protagonizado por el icónico erizo azul..."
+            },
+                new Item
+            {
+                Id = 5,
+                Titulo = "Cooking Mama",
+                Genero = "Simulación",
+                Ano = 2006,
+                Consola = "Nintendo DS",
+                Descripcion = "Videojuego de simulación de cocina donde los jugadores preparan diversos platos siguiendo instrucciones paso a paso."
+            },
+                               new Item
+            {
+                Id = 6,
+                Titulo = "Minecraft",
+                Genero = "Exploracion",
+                Ano = 2011,
+                Consola = "PC",
+                Descripcion = "Videojuego de construcción y exploración en un mundo abierto compuesto por bloques."
+            },
+                                              new Item
+            {
+                Id = 7,
+                Titulo = "League of Legends",
+                Genero = "MOBA",
+                Ano = 2009,
+                Consola = "PC",
+                Descripcion = "Videojuego de estrategia en tiempo real donde los jugadores controlan campeones con habilidades únicas para destruir la base enemiga."
+            },
+                                                             new Item
+            {
+                Id = 8,
+                Titulo = "Valorant",
+                Genero = "Shooter",
+                Ano = 2020,
+                Consola = "PC",
+                Descripcion = "Videojuego de disparos en primera persona donde los jugadores controlan agentes con habilidades únicas para competir en partidas tácticas por equipos."
+            },
         };
 
       
