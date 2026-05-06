@@ -1,0 +1,40 @@
+﻿@model List<Catalogo.Models.Item>
+
+<div class="text-center mb-4">
+    <h1>Catálogo de Videojuegos</h1>
+</div>
+
+<div class="text-center mb-4">
+    <a asp-action="Index" class="btn btn-outline-light btn-sm mx-1">Todos</a>
+    @foreach (var gen in ViewBag.Generos as List<string>)
+    {
+        <a asp-action="Index" asp-route-genero="@gen" class="btn btn-outline-light btn-sm mx-1">@gen</a>
+    }
+</div>
+
+<hr style="border-color: #5e35b1;" />
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-4 mb-4">
+            <div class="card card-gamer h-100">
+                <div class="card-body text-center">
+                    <h4 class="card-title" style="color: #ffcc00;">@item.Titulo</h4>
+                    <h6 class="card-subtitle mb-3 text-purple-light">@item.Genero</h6>
+                    
+                    <p class="card-text mb-1">Consola: <strong>@item.Consola</strong></p>
+                    <p class="card-text mb-3">Lanzamiento: <strong>@item.Ano</strong></p>
+                    
+                    <a asp-action="Detalle" asp-route-id="@item.Id" class="btn btn-gamer w-100">Ver Detalles</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<hr style="border-color: #5e35b1;" />
+
+<div class="text-center mt-4">
+    <a asp-action="Agregar" class="btn btn-gamer px-4">+ Agregar Videojuego</a>
+</div>

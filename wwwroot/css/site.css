@@ -1,0 +1,82 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+
+body {
+    background-color: #121212;
+    color: #e0e0e0; 
+}
+
+h1, h2, h3 {
+    color: #ffcc00 !important;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.card-gamer {
+    background-color: #2d1b4e; 
+    border: 1px solid #5e35b1; 
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+  .card-gamer:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(255, 204, 0, 0.3);
+        border-color: #ffcc00;
+    }
+
+.text-purple-light {
+    color: #b39ddb !important;
+}
+
+.btn-gamer {
+    background-color: #ffcc00;
+    color: #121212; 
+    font-weight: bold;
+    border: none;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+    .btn-gamer:hover {
+        background-color: #e6b800;
+        color: #000;
+        box-shadow: 0 0 10px #ffcc00; 
+    }
+
+a {
+    color: #b39ddb;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #ffcc00;
+    }
