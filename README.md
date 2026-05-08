@@ -39,4 +39,8 @@ La aplicación está pensada como práctica académica para comprender la arquit
 
 
 
+##Uso de Ai
+###Yo Heidi Esther Peña Betanzos use Ai para que me ayudara al Css ya q_e tuve problemas en la creacion del estilo de "agregar", use Gemini y aqui dejo mi prompt. 
+_necesito que me ayudes a decorar la pagina, no me esta saliendo como yo quiero_
+<img width="1325" height="492" alt="Captura de pantalla 2026-05-07 195218" src="https://github.com/user-attachments/assets/c998d0fc-cd8f-4348-80a1-dc991ebafbd7" />
 
