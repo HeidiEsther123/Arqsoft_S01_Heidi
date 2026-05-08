@@ -1,29 +1,47 @@
 ﻿@model Catalogo.Models.Item
 
-<h1>Agregar videojuego</h1>
-<form asp-action="Agregar" method="post">
-<div>
-<label>Título</label>
-<input asp-for="Titulo" />
-</div>
-<div>
-<label>Género</label>
-<input asp-for="Genero" />
-</div>
-<div>
-    <label>Consola</label>
-    <input asp-for="Consola" />
-</div>
-    <div>
-        <label>Año</label>
-        <input asp-for="Ano" type="number" />
+<div class="container mt-4">
+    <div class="text-center mb-4">
+        <h1>Agregar Videojuego</h1>
     </div>
-    <div>
-        <label>Descripción</label>
-        <textarea asp-for="Descripcion"></textarea>
-    </div>
-    <button type="submit">Guardar</button>
-</form>
-<hr />
-<a asp-action="Index">&larr; Cancelar</a>
 
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card card-gamer p-4 shadow-lg">
+                <form asp-action="Agregar" method="post">
+                    
+                    <div class="mb-3">
+                        <label asp-for="Titulo" class="form-label-gamer">Título</label>
+                        <input asp-for="Titulo" class="form-control form-control-gamer" placeholder="Ej: Elden Ring" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Genero" class="form-label-gamer">Género</label>
+                        <input asp-for="Genero" class="form-control form-control-gamer" placeholder="Ej: RPG" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Consola" class="form-label-gamer">Consola</label>
+                        <input asp-for="Consola" class="form-control form-control-gamer" placeholder="Ej: PS5, PC, Xbox" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Ano" class="form-label-gamer">Año</label>
+                        <input asp-for="Ano" class="form-control form-control-gamer" type="number" placeholder="2024" required />
+                    </div>
+
+                    <div class="mb-4">
+                        <label asp-for="Descripcion" class="form-label-gamer">Descripción</label>
+                        <textarea asp-for="Descripcion" class="form-control form-control-gamer" rows="3" placeholder="Breve reseña del juego..."></textarea>
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-gamer btn-lg">Guardar Videojuego</button>
+                        <a asp-action="Index" class="btn btn-outline-light mt-2">← Cancelar</a>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

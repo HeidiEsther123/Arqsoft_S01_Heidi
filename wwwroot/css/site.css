@@ -80,3 +80,20 @@ a {
     a:hover {
         color: #ffcc00;
     }
+    .form-control-gamer {
+        background: #2d1b4e;
+        color: white;
+        border: 1px solid #e6b800;
+    }
+
+        .form-control-gamer:focus {
+            background: #e6b800;
+            color: #ffffff;
+            border: #ffcc00;
+            box-shadow: 0 0 8px rgba(255, 204, 0, 0.3);
+        }
+.form-label-gamer {
+    color: #b39ddb;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
